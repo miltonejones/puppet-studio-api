@@ -6,6 +6,9 @@ jobs:
     strategy:
       matrix:
         node-version: [12.x]
+    environment: 
+      name: development
+      url: https://github.com/miltonejones/puppet-studio-api
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
