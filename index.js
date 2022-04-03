@@ -50,10 +50,9 @@ const saveSMS = (text) => {
       yes({ fileName });
     })
   })
-  
 }
 
-
+// main handler processes incoming requests
 exports.handler = async (event, context) => { 
   let body;
   let statusCode = 200;
